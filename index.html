@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>POO</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<h1>Vos Marques !</h1>
-	<ul>
-		<li>Teste</li>
-		<li><input type="text" name="Choix" placeholder="Choisissez votre marque..."><input type="button" name="Ajout" value="+"></li>
-	</ul>
+	<input type="text" name="Choix" placeholder="Choisissez votre marque..." id="addM"><input type="button" name="Ajout" value="+" id="myBtn">
+	<ul id="myUl"></ul>
 	<h1>Vos Produits !</h1>
+	<td><input type="text" name="produits" placeholder="Choisissez votre produit..." id="addP"></td>
+	<td><input type="text" name="prix" placeholder="Choisissez votre prix..." id="addPr"></td>
+	<td><input type="text" name="quantite" placeholder="Choisissez votre quantité..." id="addQ"></td>
+	<td><input type="button" name="Ajout" value="+"></td>
+	<br>
+	<br>
 	<table>
 	<tr>
 		<th>Produits</th>
 		<th>Prix</th>
 		<th>Unité</th>
 	</tr>
-	<tr>
-		<td>Veste</td>
-		<td>Prix</td>
-		<td>Unité</td>
-	</tr>
-	<tr>
-		<td><input type="text" name="produits" placeholder="Choisissez votre produit..."></td>
-		<td><input type="text" name="prix" placeholder="Choisissez votre prix..."></td>
-		<td><input type="text" name="quantite" placeholder="Choisissez votre quantité..."></td>
-		<td><input type="button" name="Ajout" value="+"></td>
-	</tr>
+	<tr id="myTable"></tr>
 	</table>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="stylejs.js"></script>
 </body>
 </html>
